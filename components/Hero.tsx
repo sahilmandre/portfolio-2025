@@ -2,6 +2,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerationEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -38,13 +39,13 @@ function Hero() {
                 Jabalpur India.
               </p>
 
-              <a className="mt-10" href="#about">
+              <Link className="mt-10" href="#about">
                 <MagicButton
                   title="Show my work"
                   icon={<FaLocationArrow />}
                   position="right"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
